@@ -28,7 +28,7 @@ const settings = {
       name: "@frontity/wp-source",
       state: {
         source: {
-          api: "https://www.matthewcromer.me/wp-json",
+          api: "https://www.matthewcromer.me/wp/wp-json",
           homepage: "/home",
           postTypes: [
             {

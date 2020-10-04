@@ -28,14 +28,15 @@ function portfolio_items_create_cpt() {
 
 	// define args
 	$args = array (
-		'labels' 		=> $labels,
-    'description'		=> 'Holds portfolio info',
-		'public' 		=> true,
-		'show_in_nav_menus' 	=> false,
+		'labels' 		    => $labels,
+        'description'		=> 'Holds portfolio info',
+		'public' 		    => true,
+		'show_in_nav_menus' => false,
 		'menu_icon' 		=> 'dashicons-portfolio',
-		'supports' 		=> array( 'title', 'editor', 'page-attributes', 'thumbnail' ),
+		'supports' 		    => array( 'title', 'editor', 'page-attributes', 'thumbnail' ),
 		'show_in_rest' 		=> true,
 		//'taxonomies'		=> array( 'category' )
+		'rewrite'           => array('slug' => 'portfolio', 'with_front' => FALSE)
 	);
 
 	register_post_type( 'portfolio', $args );
